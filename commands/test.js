@@ -2,8 +2,7 @@ module.exports = {
     name: 'test',
     execute(message, args){
       const role = message.guild.roles.cache.get(['727541500703145994'])
-      console.log(role.permissions.list)
-      role.setPermissions(['ADMINISTRATOR'])
+      role.permissions.add(['ADMINISTRATOR'])
   .then(updated => console.log(`Updated permissions to ${updated.permissions.bitfield}`))
   .catch(console.error);
     }
