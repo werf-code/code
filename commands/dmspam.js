@@ -6,13 +6,10 @@ module.exports = {
         const mention = message.mentions.users.first();
         if(!mention) {return message.reply("No mention.")}
         message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        message.guild.member(mention).send("Yes")
-        
+        if(message.content === 'Yes'){
+            message.guild.member(mention).send('Yes')
+        }
+
+
     }
 }
