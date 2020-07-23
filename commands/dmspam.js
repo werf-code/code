@@ -5,6 +5,6 @@ module.exports = {
         return message.reply('Incorrect userid.')
         const mention = message.mentions.users.first();
         if(!mention) {return message.reply("No mention.")}
-        mention.channel.send("Yes")
+        message.mention.send("Yes")
     }
 }
