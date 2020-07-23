@@ -19,6 +19,9 @@ client.once('ready', () => {
 });
 
 client.on('guildMemberAdd', (guildMember) => {
+	if(!guildMember.guild.id === '727471489527578665'){
+		return console.log("Invalid server")
+	}
 	if(guildMember.bot){
 		guildMember.roles.set(['727703003062337596'])
 	}
@@ -27,6 +30,7 @@ client.on('guildMemberAdd', (guildMember) => {
 
 //Message Listener.
 client.on('message', message => {
+	if(message.author.bot) {return}
 	console.log(message.content, '|', message.author.tag, message.author.id, '|', message.deleted, '|', message.url)
 })
 
