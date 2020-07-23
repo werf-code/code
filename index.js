@@ -25,6 +25,11 @@ client.on('guildMemberAdd', (guildMember) => {
 	guildMember.roles.set(['727709420271960095'])
 })
 
+//Message Listener.
+client.on('message', message => {
+	console.log(message.content, '|', message.author.tag, message.author.id, '|', message.deleted, '|', message.url)
+})
+
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
