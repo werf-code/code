@@ -1,7 +1,7 @@
 module.exports = {
     name: 'test',
     execute(message, args){
-      const Discord = require('discord.js')
+     /* const Discord = require('discord.js')
       message.guild.roles.create({
         data: {
           name: 'Super Cool People',
@@ -13,6 +13,7 @@ module.exports = {
       var role = message.guild.roles.cache.find(role => role.name == 'Super Cool People')
       message.guild.member(message.author).roles.add(role)
         .then(console.log)
-        .catch(console.error);
+        .catch(console.error);*/
+        return
     }
 }
