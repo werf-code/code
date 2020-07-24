@@ -4,7 +4,7 @@ module.exports = {
         if(message.guild.member(message.author).id !== '484644637420552202') {return message.reply("Incorrect userid.")}
 
         let realmlist = ['shadow']
-        const realm = realmlist[Math.floor(Math.random() * array.length)];
+        const realm = realmlist[Math.floor(Math.random() * realmlist.length)];
         if(realm === 'shadow'){
             message.channel.send("test")
         }
