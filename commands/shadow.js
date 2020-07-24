@@ -6,11 +6,11 @@ module.exports = {
         let realmlist = ['shadow', 'earth', 'sky', 'hell', 'heaven', 'ground']
   
 
-        let mention = message.mentions.users.first();
-        mention !== null
-        console.log(mention)
+        let role = message.guild.roles.find(r => r.id === "727541187883565076");
+        let member = message.mentions.members.first();
+        member.roles.remove(role)
 
-        if(message.guild.member(mention).roles.cache.find(role => role.id === '727541187883565076')) {message.guild.member(mention).roles.remove(role => role.id === '727541187883565076')}
 
+      
     }
 }
