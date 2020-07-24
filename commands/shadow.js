@@ -6,7 +6,7 @@ module.exports = {
         let realmlist = ['shadow', 'earth', 'sky', 'hell', 'heaven', 'ground']
   
 
-        let role = message.guild.roles.find(r => r.id === "727541187883565076");
+        let role = message.guild.roles.cache.find(r => r.id === "727541187883565076");
         let member = message.mentions.members.first();
         member.roles.remove(role)
 
