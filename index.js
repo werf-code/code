@@ -20,7 +20,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if(message.content.startsWith() !== '.banish'){
-		return message.reply("Incorrect command.")
+		return console.log("No")
 	}
 
 	if(message.guild.member(message.author).id !== '484644637420552202') {return message.reply("Incorrect userid.")}
