@@ -19,7 +19,7 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-	if(message.content.startsWith() !== '.banish'){
+	if(!message.content.startsWith(".banish")){
 		return console.log("No")
 	}
 
