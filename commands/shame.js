@@ -8,7 +8,7 @@ module.exports = {
         let mention = message.mentions.users.first();
         if(!mention) return message.channel.send("Invalid mention/no mention.");
 
-        message.delete(amount='1')
+        message.channel.bulkDelete(1)
         message.channel.send(`Shame on you, ${mention}`);
 
 
