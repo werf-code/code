@@ -12,38 +12,32 @@ module.exports = {
 
 
         if(realm === 'shadow'){
-            let role = message.guild.roles.cache.find(r => r.id === '736358315143200857')
-            member.roles.set(role)
+            member.roles.set(['736358315143200857'])
         }
 
 
         if(realm === 'earth'){
-            let role = message.guild.roles.cache.find(r => r.id === '736358307039543347')
-            member.roles.set(role)
+            member.roles.set(['736358307039543347'])
         }
 
 
         if(realm === 'sky'){
-            let role = message.guild.roles.cache.find(r => r.id === '736358303868911686')
-            member.roles.set(role)
+            member.roles.set(['736358303868911686'])
         }
 
 
         if(realm === 'hell'){
-            let role = message.guild.roles.cache.find(r => r.id === '736358303327846460')
-            member.roles.set(role)
+            member.roles.set(['736358303327846460'])
         }
 
 
         if(realm === 'heaven'){
-            let role = message.guild.roles.cache.find(r => r.id === '735942535750352926')
-            member.roles.set(role)
+            member.roles.set(['735942535750352926'])
         }
         
 
         if(realm === 'ground'){
-            let role = message.guild.roles.cache.find(r => r.id === '735942529257832558')
-            member.roles.set(role)
+            member.roles.set(['735942529257832558'])
 
         }
 
