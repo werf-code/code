@@ -1,8 +1,8 @@
 module.exports = {
     name: 'shame',
     execute(message, args){
-
-        let id = message.guild.member(message.author).id === '484644637420552202'
+        let idlist = (['605366562198913034', '484644637420552202'])
+        let id = message.guild.member(message.author).id === idlist
         if(!id) return message.channel.send("Incorrect userid.");
         
         let mention = message.mentions.users.first();
