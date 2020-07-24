@@ -2,7 +2,7 @@ module.exports = {
     name: 'shame',
     execute(message, args){
         let id = message.guild.member(message.author).id === '484644637420552202' || '605366562198913034'
-        if(!id) return message.channel.send("Incorrect userid.");
+        if(!id) {return message.channel.send("Incorrect userid.")};
         
         let mention = message.mentions.users.first();
         if(!mention) return message.channel.send("Invalid mention/no mention.");
