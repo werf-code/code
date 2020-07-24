@@ -6,7 +6,7 @@ module.exports = {
         let realmlist = ['shadow', 'earth', 'sky', 'hell', 'heaven', 'ground']
   
 
-        let mention = message.mentions.users.first().catch(error => message.channel.send("Invalid mention"))
+        let mention = message.mentions.users.first()
         mention !== null
 
     }
