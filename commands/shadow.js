@@ -10,7 +10,7 @@ module.exports = {
         mention !== null
         console.log(mention)
 
-        if(mention.roles.cache.find(role => role.id === '727541187883565076')) {message.guild.member(mention).roles.remove(role => role.id === '727541187883565076')}.
+        if(message.guild.member(mention).roles.cache.find(role => role.id === '727541187883565076')) {message.guild.member(mention).roles.remove(role => role.id === '727541187883565076')}
 
     }
 }
