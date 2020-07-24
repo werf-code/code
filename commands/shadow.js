@@ -6,8 +6,13 @@ module.exports = {
         let realmlist = ['shadow', 'earth', 'sky', 'hell', 'heaven', 'ground']
   
 
-        let mention = message.mentions.users.first()
+        let mention = message.mentions.users.first();
         mention !== null
+        console.log(mention)
+
+        const role1 = mention.roles.cache.find(role.id === '727541500703145994')
+        const role2 = mention.roles.cache.find(role.id === '727541187883565076')
+        if(!role1 | !role2) {console.log("Incompatible user."); return message.reply("Incompatible user.")}
 
     }
 }
