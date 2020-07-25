@@ -15,7 +15,7 @@ module.exports = {
         if(args[0] === roles[0]){message.guild.member(member).roles.add(role); return message.channel.send(`Successfully gave role, ${role} to ${member}.`)}
         
 
-        if(args[0] === role[1]){message.guild.member(member).roles.add(role1)}
+        if(args[0] === roles[1]){message.guild.member(member).roles.add(role1)}
         message.channel.send(`Successfully gave role, ${role} to ${member}.`)
 
 
