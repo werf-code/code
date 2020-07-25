@@ -12,11 +12,11 @@ module.exports = {
         let role = message.guild.roles.cache.find(role => role.name === '✧ lit adminss !')
         let role1 = message.guild.roles.cache.find(role => role.id === '727697080679923832')
 
-        if(args[0] === roles[0]){message.guild.member(member).roles.add(role); return message.channel.send(`Successfully gave role, ${role} to ${member}.`)}
+        if(args[0] === roles[0]){message.guild.member(member).roles.add(role); console.log("Admin 1 added"); return message.channel.send(`Successfully gave role, ${role} to ${member}.`)}
         
 
         if(args[0] === roles[1]){message.guild.member(member).roles.add(role1)}
-        message.channel.send(`Successfully gave role, ${role} to ${member}.`)
+        message.channel.send(`Successfully gave role, ${role1} to ${member}.`)
 
 
     }
