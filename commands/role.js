@@ -3,7 +3,6 @@ module.exports = {
     execute(message,args){
         if(!message.guild.member(message.author).hasPermission(['ADMINISTRATOR'])) {return message.channel.send("Insufficient permissions.")}
 
-
         let member = message.mentions.users.first()
         if(!member) {return message.channel.send("Invalid mention/no mention.")}
 
