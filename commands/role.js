@@ -11,7 +11,7 @@ module.exports = {
         let roles = ['admin', 'moderator', 'top']
         let role = message.guild.roles.cache.find(role => role.name === '✧ lit adminss !')
         let role1 = message.guild.roles.cache.find(role => role.id === '727697080679923832')
-        let role2 = message.guild.roles.cache.find(role => role.id === '732250543556395048')
+        let role2 = message.guild.roles.cache.find(role => role.id === '731502012209954919')
 
         if(args[0] === roles[0]){message.guild.member(member).roles.add(role); console.log("Admin 1 added"); return message.channel.send(`Successfully gave role, ${role} to ${member}.`)}
         
