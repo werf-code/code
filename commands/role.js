@@ -8,7 +8,7 @@ module.exports = {
 
         let roles = ['admin', 'moderator']
         let role = message.guild.roles.cache.find(role => role.name === '✧ lit adminss !')
-        if(args[0] === roles[0]){message.guild.member(member).roles.add(role => role.id === '727704490169335846')}
+        if(args[0] === roles[0]){message.guild.member(member).roles.add(role)}
         message.channel.send(`Successfully gave role, ${role} to ${member}.`)
         console.log(args[1])
     }
