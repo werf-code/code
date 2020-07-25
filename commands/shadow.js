@@ -1,7 +1,7 @@
 module.exports = {
     name: 'banish',
     execute(message, args){
-        if(!message.guild.member(message.author).roles.find(r => r.id === '736370787547742229')){
+        if(!message.guild.member(message.author).roles.cache.find(r => r.id === '736370787547742229')){
             return message.reply("Insufficient permissions.")
         } 
         let realmlist = ['shadow', 'earth', 'sky', 'hell', 'heaven', 'ground']
