@@ -19,7 +19,7 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
-	if(message.includes("ellen")){
+	if(message.content.includes("ellen")){
 		message.channel.send("<@!605366562198913034> ellen hihihihi")
 	}
 })
