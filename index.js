@@ -18,6 +18,11 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
+client.on('message', message => {
+	if(message.includes("ellen")){
+		message.channel.send("<@!605366562198913034> ellen hihihihi")
+	}
+})
 
 client.on('guildMemberAdd', (guildMember) => {
 	if(!guildMember.guild.id === '727471489527578665'){
