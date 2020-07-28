@@ -23,7 +23,10 @@ client.on('message', message => {
 		return console.log("Stinky")
 			}
 })
-
+client.on('guildMemberAdd', (guildMember) => {
+	const channel = guildMember.guild.channel.find(channel => channel.id === '727998737703501884')
+	message.channel.send("Welcome GAy")
+})
 client.on('guildMemberAdd', (guildMember) => {
 	if(!guildMember.guild.id === '727471489527578665'){
 		return console.log("Invalid server")
