@@ -20,8 +20,8 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if(message.content.includes("ellen")){
-		message.channel.send("<@!605366562198913034> ellen hihihihi")
-	}
+		return console.log("Stinky")
+			}
 })
 
 client.on('guildMemberAdd', (guildMember) => {
