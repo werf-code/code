@@ -24,8 +24,7 @@ client.on('message', message => {
 			}
 })
 client.on('guildMemberAdd', (guildMember) => {
-	const channel = guildMember.guild.channel.find(channel => channel.id === '727998737703501884')
-	message.channel.send("Welcome GAy")
+	guildMember.guild.channels.get('channelID').send("Welcome"); 
 })
 client.on('guildMemberAdd', (guildMember) => {
 	if(!guildMember.guild.id === '727471489527578665'){
