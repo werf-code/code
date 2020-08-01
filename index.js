@@ -38,7 +38,7 @@ client.on('message', message => {
 	if(message.author.bot) {return}
 	console.log(message.content, '|', message.author.tag, message.author.id, '|', message.deleted, '|', message.url)
 
-	if(mesage.includes("gay")) {return message.react('🤔')}
+	if(message.includes("gay")) {return message.react('🤔')}
 })
 
 client.on('message', message => {
