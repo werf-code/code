@@ -16,13 +16,9 @@ const cooldowns = new Discord.Collection();
 
 client.once('ready', () => {
 	console.log('Ready!');
-
 });
 
-client.on('message', message => {
-	if(message.content.includes("ellen")){
-		return console.log("Stinky")
-			}
+
 })
 client.on('guildMemberAdd', (guildMember) => {
 	guildMember.guild.channels.get('channelID').send("Welcome");
@@ -41,6 +37,8 @@ client.on('guildMemberAdd', (guildMember) => {
 client.on('message', message => {
 	if(message.author.bot) {return}
 	console.log(message.content, '|', message.author.tag, message.author.id, '|', message.deleted, '|', message.url)
+
+	if(mesage.includes("gay")) {return message.react('🤔')}
 })
 
 client.on('message', message => {
