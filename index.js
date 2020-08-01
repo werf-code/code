@@ -16,6 +16,25 @@ const cooldowns = new Discord.Collection();
 
 client.once('ready', () => {
 	console.log('Ready!');
+	let statuses = [
+    {game: {name: `1`}, type: "WATCHING"},
+    {game: {name: `2`}, type: "PLAYING"}
+    {game: {name: `3`}, type: "STREAMING"}
+];
+let i = 0;
+
+setInterval(() => {
+     // Get the status
+     let status = statuses[i];
+     // If it's undefined, it means we reached the end of the array
+     if(!status){
+         // Restart at the first status
+         status = statuses[0];
+         i = 0;
+     }
+     client.user.setPresence(status);
+     i++;
+}, 5000);
 });
 
 client.on('message', message => {
@@ -24,7 +43,7 @@ client.on('message', message => {
 			}
 })
 client.on('guildMemberAdd', (guildMember) => {
-	guildMember.guild.channels.get('channelID').send("Welcome"); 
+	guildMember.guild.channels.get('channelID').send("Welcome");
 })
 client.on('guildMemberAdd', (guildMember) => {
 	if(!guildMember.guild.id === '727471489527578665'){
