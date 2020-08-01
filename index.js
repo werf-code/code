@@ -19,7 +19,7 @@ client.once('ready', () => {
 });
 
 
-})
+
 client.on('guildMemberAdd', (guildMember) => {
 	guildMember.guild.channels.get('channelID').send("Welcome");
 })
