@@ -18,6 +18,7 @@
   "homepage": "https://github.com/werf-code/code#readme",
   "dependencies": {
     "discord.js": "^12.2.0",
+    "fs": "0.0.1-security",
     "ms": "^2.1.2"
   },
   "devDependencies": {}
