@@ -2,7 +2,7 @@ module.exports = {
     name: 'shame',
     execute(message, args){
          if(message.guild.member(message.author).id !== "484644637420552202")
-        var mention = message.users.mentions.first();
+        var mention = message.mentions.users.first();
         if(!mention) {return message.channel.send("Invalid mention/no mention.")};
 
         message.channel.bulkDelete(1)
