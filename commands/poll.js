@@ -8,7 +8,7 @@ module.exports = {
 
 
 
-    message.bulkDelete(1)
+    message.channel.bulkDelete(1)
     message.channel.send(`${pollReason}`)
     message.react("⬇️")
     message.react("⬆️")
