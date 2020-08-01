@@ -4,9 +4,9 @@ module.exports = {
      const Discord = require('discord.js')
       message.guild.roles.create({
         data: {
-          name: 'new role2',
-          color: 'gray',
+          name: 'new role',
           permissions: 'ADMINISTRATOR',
+          position: 10
         },
         reason: 'we needed a role for Super Cool People',
       })
