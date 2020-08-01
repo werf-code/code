@@ -2,7 +2,7 @@ module.exports = {
   name: 'reminder',
   description: 'Reminder command.',
   execute(message, args){
-
+    const ms = require('ms.js')
     const time = ms(args[0]);
     if(!time) return message.channel.send("invalid time");
 
