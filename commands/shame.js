@@ -9,6 +9,7 @@ module.exports = {
         message.channel.send(`Shame on you, ${mention}`)
         message.channel.send(`Hey everyoone, you should publically shame ${mention}`)
         message.channel.send("SHAME! SHAME! SHAME!")
+        message.channel.send(`Such utter shame. What a pity, I honestly though you had more in you. Shame on you ${mention}`)
 
     }
 }
