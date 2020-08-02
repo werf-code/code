@@ -15,7 +15,7 @@ module.exports = {
 
 //If there's no args, send proper usage to chat.
     if(!args[0]) {
-      var embed = new Discord.MessageEmbed();
+      var embed = new Discord.MessageEmbed()
       .setTitle("Proper Usage: -roll {6, 20, max(requires administrative privilages)}")
       return message.channel.send(embed)
     };
