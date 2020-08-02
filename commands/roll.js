@@ -29,7 +29,7 @@ module.exports = {
       let sides = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
     };
 
-    if(args[0] !== size[0] || size[1] || size[2] {return message.channel.send("Incorrect amount, accepted amounts are, 6, 20, max.")}
+    if(args[0] !== size[0] || size[1] || size[2]) {return message.channel.send("Incorrect amount, accepted amounts are, 6, 20, max.")}
 //Chooses result and sets it as the title.
     var result = sides[Math.floor(Math.random() * sides.length)]
     .setTitle(`And the result is, ${result}`)
