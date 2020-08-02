@@ -5,7 +5,7 @@ module.exports = {
 
     //Command Begins here.
     const Discord = require('discord.js');
-    const embed = new Discord.MessageEmbed();
+    var embed = new Discord.MessageEmbed();
     let size = ['6', '20', 'max']
 
 //Check if the author's administrator, if true, inform of max dice.
@@ -15,6 +15,7 @@ module.exports = {
 
 //If there's no args, send proper usage to chat.
     if(!args[0]) {
+      var embed = new Discord.MessageEmbed();
       .setTitle("Proper Usage: -roll {6, 20, max(requires administrative privilages)}")
       return message.channel.send(embed)
     };
