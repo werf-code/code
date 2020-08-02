@@ -42,7 +42,9 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-	if (!message.content.startsWith(prefix) || message.author.bot) return;
+	if(message.content.startsWith(".f")) {message.channelxxb
+		.bulkDelete(1); return message.channel.send(`${message.author} has paid their respects.`)}
+	if (!message.content.startsWith(prefix)	) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
@@ -81,4 +83,4 @@ client.on('message', message => {
 		console.error(error);
 		message.reply('there was an error trying to execute that command!')}});
 
-client.login(process.env.token);
+client.login('NzI5ODA4MzM2NzA2NDY5OTA4.XwOU-g.NjgUpGSAsR8wxOQ5KL2ihHcT674');
