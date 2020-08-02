@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'roll.js',
+  name: 'roll',
   description: 'rolls a predetermined 6, 20 or 40 sided die',
   execute(message, args){
 
@@ -9,7 +9,7 @@ module.exports = {
     let size = ['6', '20', 'max']
 
 //Check if the author's administrator, if true, inform of max dice.
-    if(message.guild.member(message.author).hasPermissions('ADMINISTRATOR')){
+    if(message.guild.member(message.author).hasPermission('ADMINISTRATOR')){
       message.channel.send("Because you have administrative privilages, you can active the 40 sided die. Usage: '-roll max'");
     }else {let size = ['6', '20']}
 
