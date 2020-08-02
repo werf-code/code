@@ -83,4 +83,9 @@ client.on('message', message => {
 		console.error(error);
 		message.reply('there was an error trying to execute that command!')}});
 
-client.login('NzI5ODA4MzM2NzA2NDY5OTA4.XwOU-g.NjgUpGSAsR8wxOQ5KL2ihHcT674');
+client.login(process.env.token)
+
+
+
+
+
